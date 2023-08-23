@@ -59,7 +59,7 @@ def retry_repo(target):
     return False
 
 def puaq():
-    print("Usage: %s URL" % path_utils.basename_filtered(__file__))
+    print("Usage: %s URL" % os.path.basename(__file__))
     sys.exit(1)
 
 if __name__ == "__main__":
