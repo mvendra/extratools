@@ -14,7 +14,12 @@ def get_repo_name(target):
 
 def retry_repo_delegate(target):
 
-    git_bin = "/usr/bin/git.exe"
+    git_bin_win = "/usr/bin/git.exe"
+    git_bin_lin = "/usr/bin/git"
+    git_bin = git_bin_win
+    if not os.path.exists(git_bin):
+        git_bin = git_bin_lin
+
     cmd_list = [git_bin, "clone", target]
 
     try:
