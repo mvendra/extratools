@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 puaq(){ # puaq stands for Print Usage And Quit
     echo "Usage: `basename $0` param"

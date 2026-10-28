@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PYBOOTFILE="main.py"
 if [ ! -z "$1" ]; then
